@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>My Form</title>
-</head>
-<body>
 
-<h3>Your form was successfully submitted!</h3>
 
-<p><?php echo anchor('Table', 'Show Table!'); ?></p>
+<h3>Data Berhasil dimasukkan. Terima Kasih</h3>
 
-</body>
-</html>
+
+<a href="<?php echo base_url(); ?>index.php/Table" class="btn btn-info" role="button">Kembali Ke daftar Mahasiswa</a>
+

@@ -1,0 +1,143 @@
+/*.navbar-brand,.user-id,
+.navbar-nav li a {
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+}**/
+
+
+/*#map {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.first-div{
+  padding-top: 100px;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}*/
+
+
+.btn-default{
+  background-color: #3498db;
+  color: white;
+}
+.navbar-brand{
+  font-style: bold;
+}
+
+.second-navbar{
+  top:50px;
+  
+  background-color: #34495e;
+  border-color: transparent;
+}
+
+.mynav{
+  background-color: #3498db;
+  border-color: transparent;
+
+}
+
+.panel .panel-heading{
+}
+
+
+.navbar .navbar-brand{
+  color: white;
+}
+
+.navbar .navbar-brand:hover{
+  color: #34495e;
+}
+
+.mynav .navbar > a{
+  color: white;
+}
+
+.navbar .nav > li > a{
+  color: white;
+}
+
+.navbar .nav > li > a:hover{
+  color: #3498db;
+}
+
+.first-div{
+  padding-top: 150px;
+}
+
+.btn {
+  background-color :;
+}
+@media (max-width: 989px){
+    html, body{
+    height: auto;
+
+  }
+
+     .height-full{
+      height: auto;
+      padding : 5px;
+    }
+}
+
+@media (min-width: 990px) { /*768 */
+
+    html, body {
+
+        height: 100%;
+
+        margin: 0px;
+
+    }
+
+    .height-full{
+      height: 100%;
+    }
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+    position: relative;
+    top: 0%;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+}
+/*
+.user-id{
+	margin-top: 10px;
+}
+
+
+/*register.php main-form
+.container-fluid > .main-form {
+		margin-top: 20px;
+}*/
+
+.error {
+   color: #ff0000;
+   font-size: 12px;
+   margin-top: 5px;
+   margin-bottom: 0;
+}
+
+.inputTxtError {
+   border: 1px solid #ff0000;
+   color: #0e0e0e;
+}
+
+

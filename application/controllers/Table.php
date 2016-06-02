@@ -41,7 +41,9 @@ class Table extends CI_Controller {
 	    	else
 	    	{
 	    		$this->The_model->insert_entry();
-	    		$this->load->view('formsuccess');     
+	    		$this->load->view('header');
+	    		$this->load->view('formsuccess');
+	    		$this->load->view('footer');
 	    	}
 	    } 
 	    else

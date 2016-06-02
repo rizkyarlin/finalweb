@@ -9,6 +9,7 @@
                 <th>Golongan Darah</th>
                 <th>Prodi</th>
                 <th>Angkatan</th>
+                <th>Action</th>
             
             </tr>
         </thead>
@@ -25,6 +26,11 @@
                 <td><?php echo $r->Golongan_Darah; ?></td>
                 <td><?php echo $r->Prodi; ?></td>
                 <td><?php echo $r->Angkatan; ?></td>
+                <td>
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-pencil"></i>
+                    <i class="fa fa-trash"></i>
+                </td>
 
             </tr>
 <?php

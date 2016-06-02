@@ -27,9 +27,11 @@
                 <td><?php echo $r->Prodi; ?></td>
                 <td><?php echo $r->Angkatan; ?></td>
                 <td>
-                    <i class="fa fa-eye"></i>
-                    <i class="fa fa-pencil"></i>
-                    <i class="fa fa-trash"></i>
+                <div class="list-group">
+                    <a class="list-group-item " href=<?php echo base_url() . "index.php/Detail/nim/" . $r->NIM;?> > <i class="fa fa-eye" ></i> </a>
+                    <a class="list-group-item" href=<?php echo base_url(); ?>index.php/Table><i class="fa fa-pencil"></i></a>
+                    <a class="list-group-item" href=<?php echo base_url(); ?>index.php/Table><i class="fa fa-trash"></i></a>
+                </div>
                 </td>
 
             </tr>

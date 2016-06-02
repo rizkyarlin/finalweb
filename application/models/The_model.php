@@ -40,6 +40,13 @@ class The_model extends CI_Model {
                 $query = $this->db->get();
                 return $result = $query->result();
         }
+        public function getDetail($nim){
+                $this->db->select('*');
+                $this->db->from('data_mahasiswa');
+                $this->db->where('NIM', $nim);
+                $query = $this->db->get();
+                return $result = $query->result();
+        }
 }
 
 ?>

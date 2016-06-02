@@ -56,6 +56,14 @@
   top: 0.14285714em;
   text-align: center;
 }
+.tbl-op li {
+    cursor:pointer;
+    display:inline-block;
+}
+
+.tbl-op li .fa-li {
+    position: static;
+}
 .fa-li.fa-lg {
   left: -1.85714286em;
 }

@@ -47,6 +47,34 @@ class The_model extends CI_Model {
                 $query = $this->db->get();
                 return $result = $query->result();
         }
+        public function update_entry($nim){
+
+                $data['Nama'] = $this->input->post('name'); 
+                $data['NIM'] = $this->input->post('nim'); 
+                $data['Jenis_Kelamin']    = $this->input->post('gender');
+                if($data['Jenis_Kelamin'] === 'Perempuan')
+                {
+                        $data['Jenis_Kelamin'] = FALSE;
+                } 
+                else
+                {
+                        $data['Jenis_Kelamin'] = TRUE;
+                }
+                $data['Tempat_Lahir']     = $this->input->post('place');
+                $data['Tanggal_Lahir']          = $this->input->post('date');
+                $data['Golongan_Darah']   = $this->input->post('goldar');
+                $data['Prodi']            = $this->input->post('prodi');
+                $data['Angkatan']         = $this->input->post('angkatan');
+
+                $this->db->where('NIM', $nim);
+                $this->db->update('data_mahasiswa', $data);
+
+        }
+
+        public function delete_entry($nim){
+                $this->db->where('nim', $nim);
+                $this->db->delete('data_mahasiswa');
+        }
 }
 
 ?>

@@ -6,6 +6,7 @@
                 <th>Jenis Kelamin</th>
                 <th>Tempat Lahir</th>
                 <th>Tanggal</th>
+                <th>Alamat</th>
                 <th>Golongan Darah</th>
                 <th>Prodi</th>
                 <th>Angkatan</th>
@@ -22,15 +23,16 @@
                 <td><?php echo $r->NIM; ?></td>
                 <td><?php echo $r->Jenis_Kelamin; ?></td>
                 <td><?php echo $r->Tempat_Lahir; ?></td>
-                <td><?php echo $r->Tanggal; ?></td>
+                <td><?php echo $r->Tanggal_Lahir; ?></td>
+                <td><?php echo $r->Alamat; ?></td>
                 <td><?php echo $r->Golongan_Darah; ?></td>
                 <td><?php echo $r->Prodi; ?></td>
                 <td><?php echo $r->Angkatan; ?></td>
                 <td>
                 <div class="list-group">
                     <a class="list-group-item " href=<?php echo base_url() . "index.php/Detail/nim/" . $r->NIM;?> > <i class="fa fa-eye" ></i> </a>
-                    <a class="list-group-item" href=<?php echo base_url(); ?>index.php/Table><i class="fa fa-pencil"></i></a>
-                    <a class="list-group-item" href=<?php echo base_url(); ?>index.php/Table><i class="fa fa-trash"></i></a>
+                    <a class="list-group-item " href=<?php echo base_url() . "index.php/Update/nim/" . $r->NIM;?> ><i class="fa fa-pencil"></i></a>
+                    <a class="list-group-item" href=<?php echo base_url() . "index.php/Delete/nim/" . $r->NIM;?> > <i class="fa fa-trash"></i></a>
                 </div>
                 </td>
 

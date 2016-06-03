@@ -30,7 +30,7 @@ class Table extends CI_Controller {
 	        $this->form_validation->set_rules('alamat','Address','required');
 	        $this->form_validation->set_rules('date','Date','required');
 	        $this->form_validation->set_rules('goldar','Goldar','required');
-	        $this->form_validation->set_rules('prodi','Prodi','required');
+	        $this->form_validation->set_rules('prodi','Prodi');
 	        $this->form_validation->set_rules('angkatan','Angkatan','required|exact_length[4]');
 	        if($this->form_validation->run() == FALSE)
 	    	{

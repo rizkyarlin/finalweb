@@ -1,6 +1,6 @@
 <?php
 
-class Detail extends CI_Controller {
+class Delete extends CI_Controller {
 
 	public function __construct()
     {
@@ -13,14 +13,14 @@ class Detail extends CI_Controller {
     }
 
        public function nim($nim)
-       {
-            $this->load->model('The_model');
+       {           
 
             $this->load->helper('url');
 
-            $data['query'] = $this->The_model->getDetail($nim);            
+            $data['nim'] = $nim;   
+            $this->The_model->delete_entry($nim);    
             $this->load->view('header');
-            $this->load->view('detail', $data);
+            $this->load->view('deletesuccess', $data);
             $this->load->view('footer');
         }
 }

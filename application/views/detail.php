@@ -21,7 +21,7 @@
               </tr>
               <tr>
                 <td>Tanggal</td>
-                <td><?php echo $query[0]->Tanggal;?></td>
+                <td><?php echo $query[0]->Tanggal_Lahir;?></td>
               </tr>
               <tr>
                 <td>Golongan Darah</td>

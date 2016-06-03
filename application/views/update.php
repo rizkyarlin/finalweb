@@ -2,18 +2,18 @@
         <div class="col-md-12">
          <fieldset>
          <legend>Masukkan Data Mahasiswa</legend>
-            <form action="<?php echo base_url(); ?>index.php/Table/post" class="form-horizontal" role="form" method="post">
+            <form action="<?php echo base_url()."index.php/Update/nim/".$query[0]->NIM; ?>" class="form-horizontal" role="form" method="post">
              <div class="form-group">
                 <label class="col-md-3 control-label">Nama</label>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="name" value="<?php echo set_value('name'); ?>"/>
+                  <input type="text" class="form-control" name="name" value="<?php echo $query[0]->Nama; ?>"/>
                   <?php echo form_error('name', '<div style="color:red"  class="error">', '</div>'); ?>
                 </div>
               </div> 
               <div class="form-group">
                 <label  class="col-md-3 control-label">NIM</label>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="nim" value="<?php echo set_value('nim'); ?>"/>
+                  <input type="text" class="form-control"  name="nim" value="<?php echo set_value('nim');echo $query[0]->NIM;?>"/>
                   <?php echo form_error('nim', '<div style="color:red"  class="error">', '</div>'); ?>
                 </div>
               </div>
@@ -28,14 +28,14 @@
               <div class="form-group">
                 <label class="col-md-3 control-label">Tempat Lahir</label>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="place" value="<?php echo set_value('place'); ?>"/>
+                  <input type="text" class="form-control" name="place" value="<?php echo $query[0]->Tempat_Lahir; ?>"/>
                   <?php echo form_error('place', '<div style="color:red"  class="error">', '</div>'); ?>
                 </div>
               </div>
               <div class="form-group">
                 <label for="lastName" class="col-md-3 control-label">Tanggal Lahir</label>
                 <div class="col-md-6">
-                <input type="text" id="datepicker" class="form-control" name="date" value="<?php echo set_value('date'); ?>"/>
+                <input type="text" id="datepicker" class="form-control" name="date" value="<?php echo $query[0]->Tanggal_Lahir; ?>"/>
                 <?php echo form_error('date', '<div style="color:red"  class="error">', '</div>'); ?>
             </div>
               </div>
@@ -43,10 +43,11 @@
               <div class="form-group">
                 <label for="lastName" class="col-md-3 control-label">Alamat</label>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="alamat" value="<?php echo set_value('alamat'); ?>"/>
-                  <?php echo form_error('alamat', '<div style="color:red"  class="error">', '</div>'); ?>
-                </div>
+                <input type="text" id="text" class="form-control" name="date" value="<?php echo $query[0]->Alamat; ?>"/>
+                <?php echo form_error('date', '<div style="color:red"  class="error">', '</div>'); ?>
+            </div>
               </div>
+
 
               <div class="form-group">
                 <label class="col-md-3 control-label">Golongan Darah</label>
@@ -84,7 +85,7 @@
               <div class="form-group">
                 <label for="lastName" class="col-md-3 control-label">Angkatan</label>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="datepicker1" name="angkatan" value="<?php echo set_value('angkatan'); ?>"/>
+                  <input type="text" class="form-control" id="datepicker1" name="angkatan" value="<?php echo $query[0]->Angkatan?>"/>
                   <?php echo form_error('angkatan', '<div style="color:red"  class="error">', '</div>'); ?>
                 </div>
               </div>

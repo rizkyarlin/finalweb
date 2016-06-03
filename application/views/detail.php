@@ -1,7 +1,7 @@
 <div class="container">
         <div class="col-md-12">
          <fieldset>
-         <legend>Masukkan Data Mahasiswa</legend>
+         <legend>Data Mahasiswa</legend>
             <table>
               <tr>
                 <td>NAMA</td>
